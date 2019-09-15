@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="400" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg01b_scenebuilder.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" alignment="CENTER" contentDisplay="CENTER" layoutX="161.0" layoutY="88.0" onAction="#handleButtonAction" text="Kattints ide!" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="160.0" />
+        <Label fx:id="label" layoutX="161.0" layoutY="123.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="79.0" text="Cimke" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="160.0" />
+    </children>
+</AnchorPane>
