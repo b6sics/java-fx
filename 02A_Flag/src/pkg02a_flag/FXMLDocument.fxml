@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg02a_flag.FXMLDocumentController">
+   <left>
+      <StackPane fx:id="spRed" prefHeight="400.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <StackPane fx:id="spWhite" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <StackPane fx:id="spGreen" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="46.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button onAction="#redAction" prefWidth="100.0" text="_Piros" />
+            <Button onAction="#whiteAction" prefWidth="100.0" text="_Fehér" />
+            <Button onAction="#greenAction" prefWidth="100.0" text="_Zöld" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Beállít">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#redAction" text="Piros" />
+                  <MenuItem mnemonicParsing="false" onAction="#whiteAction" text="Fehér" />
+                  <MenuItem mnemonicParsing="false" onAction="#greenAction" text="Zöld" />
+                  <SeparatorMenuItem disable="true" mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#allAction" text="Mind">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="M" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Egyéb">
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#helpAction" text="Névjegy..." />
+                  <MenuItem mnemonicParsing="false" onAction="#exitAction" text="Kilép">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
